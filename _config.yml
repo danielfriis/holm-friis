@@ -1,0 +1,29 @@
+url: "https://www.holm-friis.dk" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Holm/Friis" # the name of your site, e.g. ACME Corp.
+
+permalink: /:collection/:slug
+
+include:
+  - _pages
+
+# collections:
+#   ventures:
+#     output: true
+#     permalink: /:collection/:slug
+
+# defaults:
+#   - scope:
+#       type: ventures
+#     values:
+#       layout: venture
+
+plugins:
+  - jekyll-postcss-v2
+
+postcss:
+  cache: false
+
+responsive:
+  widths: [400, 950, 1400]
+  quality: 90
